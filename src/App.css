@@ -1,0 +1,24 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: url("../public/images/bg.svg");
+  height: 100vh;
+}
+
+header > img {
+  margin-top: 15vh;
+  height: 25vh;
+}
+
+header > h2 {
+  font-size: 15px;
+}
+
+header > .planets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=App.css.map */

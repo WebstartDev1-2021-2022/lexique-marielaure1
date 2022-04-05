@@ -1,0 +1,41 @@
+:root{
+    --blue: #1E60E4;
+    --white: #FFFFFF;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: url("../public/images/bg.svg");
+    height: 100vh;
+    
+
+    & > img{
+        margin: 30% 0 30% 0;
+        height: 25vh;
+    }
+
+    & > h2{
+        font-size: 15px;
+        color: var(--white);
+    }
+
+    & > p{
+        background-color: var(--white);
+        padding: 18px 5px;
+        text-align: center;
+        margin: 20%;
+        border-radius: 12px;
+        color: var(--blue);
+        font-size: 18px;
+        font-weight: medium;
+    }
+
+    & > .planets{
+        display: flex;
+
+    }
+}
