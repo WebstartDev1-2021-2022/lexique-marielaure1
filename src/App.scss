@@ -1,34 +1,43 @@
 :root{
     --blue: #1E60E4;
     --white: #FFFFFF;
+    --purple: #611F5F;
+    --darker-purple: #3C0E3C;
+    --dark-purple: #521B53;
+    --pratique: #FDE75B;
+    --impression: #FF5AAF;
+    --digital: #3BD1FF;
 }
-
 
 body{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--dark-purple);
 }
 
-header{
+.accueil{
     background: url("../public/images/bg.svg");
     height: 100vh;
     
 
     & > img{
         margin: 30% 0 30% 0;
-        height: 25vh;
+        height: 25%;
     }
 
     & > h2{
         font-size: 15px;
         color: var(--white);
-        margin: 0 10%;
+        margin: 0 14%;
+        text-align: center;
+        line-height: 24px;
     }
 
     & > p{
         background-color: var(--white);
         padding: 18px 5px;
         text-align: center;
-        margin: 20%;
+        margin: 10% 25%;
         border-radius: 12px;
         color: var(--blue);
         font-size: 18px;
@@ -37,6 +46,116 @@ header{
 
     & > .planets{
         display: flex;
+        justify-content: space-evenly;
 
+    }
+}
+
+.search-bar{
+    height: 52px;
+    width: 100%;
+    border-radius: 8px;
+    border: rgba(255, 255, 255, 0.74) 2px solid;
+    display: flex;
+    align-items: center;
+
+    & > button{
+        background-color: inherit;
+        border: none;
+    }
+
+    & > input{
+        outline: none;
+        font-size: 18px;
+        height: 30px;
+        width: 80%;
+        background-color: inherit;
+        border: none;
+    }
+
+    & > input::placeholder{
+        color: #FFFFFF;
+    }
+}
+
+
+
+.search-categorie{
+    height: 100%;
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+
+    & > img{
+        height: 50px;
+        margin: 50px 0 30px 0;
+    }
+
+    & > .choice{
+        display: flex;
+        border: var(--darker-purple) 2px solid;
+        border-radius: 8px;
+        box-shadow: -4px 4px #3c0e3c7f;
+        margin-bottom: 20px;
+
+        & > .choice-btn{
+            width: 50%;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & > span{
+                color: rgba(255, 255, 255, 0.74);
+            }
+        }
+
+        & > .actived{
+            background-color: var(--purple);
+            border-radius: 8px;
+
+            & > span{
+                color: var(--white);
+            }
+        }
+    }
+
+    & > .search{
+        & > .result{
+            margin-top: 20px;
+            height: 60%;
+            width: 100%;
+
+            & > .def{
+                height: 60px;
+                width: 100%;
+                background-color: var(--purple);
+                flex-shrink: 0;
+                border-radius: 17px;
+                margin-bottom: 4px;
+                font-size: 16px;
+                // font-weight: 600;
+                box-sizing: border-box;
+                padding: 12px;
+
+                & > h3{
+                    color: var(--white);
+                    margin-bottom: 5px;
+                }
+
+                & > .digital{
+                    color: var(--blue);
+                }
+
+                & > .impression{
+                    color: var(--impression);
+                }
+
+                & > .pratique{
+                    color: var(--pratique);
+                }
+            }
+        }
     }
 }
