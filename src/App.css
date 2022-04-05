@@ -1,3 +1,8 @@
+:root {
+  --blue: #1E60E4;
+  --white: #FFFFFF;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -8,12 +13,25 @@ header {
 }
 
 header > img {
-  margin-top: 15vh;
+  margin: 30% 0 30% 0;
   height: 25vh;
 }
 
 header > h2 {
   font-size: 15px;
+  color: var(--white);
+  margin: 0 10%;
+}
+
+header > p {
+  background-color: var(--white);
+  padding: 18px 5px;
+  text-align: center;
+  margin: 20%;
+  border-radius: 12px;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: medium;
 }
 
 header > .planets {
