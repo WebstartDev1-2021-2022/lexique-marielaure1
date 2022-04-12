@@ -71,10 +71,11 @@ body{
         width: 80%;
         background-color: inherit;
         border: none;
+        color: var(--white);
     }
 
     & > input::placeholder{
-        color: #FFFFFF;
+        color: var(--white);
     }
 }
 
