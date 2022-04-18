@@ -1,6 +1,6 @@
 import './reset.css';
 import './App.scss';
-import { Home } from "./components/SearchComponents/Search"
+import { Nav } from "./components/SearchComponents/Nav"
 import { Result } from "./components/Result"
 
 import { Routes, Route } from "react-router-dom"
@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom"
 export const App = () => {
     return (
         <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="" element={<Nav />} />
             <Route path="result" element={<Result />} />
         </Routes>
     );

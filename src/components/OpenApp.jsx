@@ -1,6 +1,6 @@
-// ACCUEIL
-{/* <header className="accueil">
-          <SearchInput/>
+export const OpenApp = setTimeout(() => {
+    return (
+        <header className="accueil">
             <img src="images/Logo1.svg" alt=""/>
             <h2>Définitions dans l’univers du Design sous toutes ses formes</h2>
             <p className="choicePlanet">Choisi une planète</p>
@@ -9,4 +9,6 @@
                 <a href=""><img src="images/planet-impression.svg" alt="" /></a>
                 <a href=""><img src="images/planet-digital.svg" alt="" /></a>
             </div>
-        </header> */}
+        </header>
+    )
+}, 5000);

@@ -54,55 +54,9 @@ body {
           justify-content: space-evenly;
 }
 
-.search-bar {
-  height: 52px;
-  width: 100%;
-  border-radius: 8px;
-  border: rgba(255, 255, 255, 0.74) 2px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.search-bar > button {
-  background-color: inherit;
-  border: none;
-}
-
-.search-bar > input {
-  outline: none;
-  font-size: 18px;
-  height: 30px;
-  width: 80%;
-  background-color: inherit;
-  border: none;
-}
-
-.search-bar > input::-webkit-input-placeholder {
-  color: #FFFFFF;
-}
-
-.search-bar > input:-ms-input-placeholder {
-  color: #FFFFFF;
-}
-
-.search-bar > input::-ms-input-placeholder {
-  color: #FFFFFF;
-}
-
-.search-bar > input::placeholder {
-  color: #FFFFFF;
-}
-
 .search-categorie {
-  height: 100%;
-  width: 90%;
-  margin-left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  height: 25vh;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -113,6 +67,10 @@ body {
 }
 
 .search-categorie > .choice {
+  width: 90%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +93,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #3c0e3c7f;
 }
 
 .search-categorie > .choice > .choice-btn > span {
@@ -150,13 +109,56 @@ body {
   color: var(--white);
 }
 
-.search-categorie > .search > .result {
+.search > .search-bar {
+  height: 52px;
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.74) 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search > .search-bar > button {
+  background-color: inherit;
+  border: none;
+}
+
+.search > .search-bar > input {
+  outline: none;
+  font-size: 18px;
+  height: 30px;
+  width: 80%;
+  background-color: inherit;
+  border: none;
+  color: var(--white);
+}
+
+.search > .search-bar > input::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+.search > .search-bar > input:-ms-input-placeholder {
+  color: var(--white);
+}
+
+.search > .search-bar > input::-ms-input-placeholder {
+  color: var(--white);
+}
+
+.search > .search-bar > input::placeholder {
+  color: var(--white);
+}
+
+.search > .listDef {
   margin-top: 20px;
   height: 60%;
   width: 100%;
 }
 
-.search-categorie > .search > .result > .def {
+.search > .listDef > .def {
   height: 60px;
   width: 100%;
   background-color: var(--purple);
@@ -170,20 +172,74 @@ body {
   padding: 12px;
 }
 
-.search-categorie > .search > .result > .def > h3 {
+.search > .listDef > .def > h3 {
   color: var(--white);
   margin-bottom: 5px;
 }
 
-.search-categorie > .search > .result > .def > .digital {
+.search > .search-bar, .search > .listDef {
+  width: 90%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.categorie {
+  display: none;
+}
+
+.categorieDef {
+  position: relative;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 85%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categorieDef > .bande {
+  background-color: #FF8201;
+  width: 90%;
+  height: 60%;
+  border-radius: 8px;
+  border: 2px #3C0E3C solid;
+  color: #FFFFFF;
+}
+
+.categorieDef > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+
+.digitalBG {
+  background-color: var(--blue);
+}
+
+.impressionBG {
+  background-color: var(--impression);
+}
+
+.pratiqueBG {
+  background-color: var(--pratique);
+}
+
+.digital {
   color: var(--blue);
 }
 
-.search-categorie > .search > .result > .def > .impression {
+.impression {
   color: var(--impression);
 }
 
-.search-categorie > .search > .result > .def > .pratique {
+.pratique {
   color: var(--pratique);
 }
 /*# sourceMappingURL=App.css.map */

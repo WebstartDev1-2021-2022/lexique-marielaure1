@@ -14,7 +14,7 @@ body{
     box-sizing: border-box;
     background-color: var(--dark-purple);
 }
-
+// ACCUEIL
 .accueil{
     background: url("../public/images/bg.svg");
     height: 100vh;
@@ -51,41 +51,10 @@ body{
     }
 }
 
-.search-bar{
-    height: 52px;
-    width: 100%;
-    border-radius: 8px;
-    border: rgba(255, 255, 255, 0.74) 2px solid;
-    display: flex;
-    align-items: center;
-
-    & > button{
-        background-color: inherit;
-        border: none;
-    }
-
-    & > input{
-        outline: none;
-        font-size: 18px;
-        height: 30px;
-        width: 80%;
-        background-color: inherit;
-        border: none;
-        color: var(--white);
-    }
-
-    & > input::placeholder{
-        color: var(--white);
-    }
-}
-
-
-
+// NAV
 .search-categorie{
-    height: 100%;
-    width: 90%;
-    margin-left: 50%;
-    transform: translate(-50%);
+    height: 25vh;
+    width: 100%;
     box-sizing: border-box;
 
     & > img{
@@ -94,6 +63,9 @@ body{
     }
 
     & > .choice{
+        width: 90%;
+        margin-left: 50%;
+        transform: translate(-50%);
         display: flex;
         border: var(--darker-purple) 2px solid;
         border-radius: 8px;
@@ -106,6 +78,8 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            // border: none;
+            background: #3c0e3c7f;
 
             & > span{
                 color: rgba(255, 255, 255, 0.74);
@@ -121,42 +95,135 @@ body{
             }
         }
     }
+}
 
-    & > .search{
-        & > .result{
-            margin-top: 20px;
-            height: 60%;
+// SECTION SEARCH
+
+.search{
+
+    // BARRE DE RECHERCHE
+    & > .search-bar{
+        height: 52px;
+        border-radius: 8px;
+        border: rgba(255, 255, 255, 0.74) 2px solid;
+        display: flex;
+        align-items: center;
+
+        & > button{
+            background-color: inherit;
+            border: none;
+        }
+
+        & > input{
+            outline: none;
+            font-size: 18px;
+            height: 30px;
+            width: 80%;
+            background-color: inherit;
+            border: none;
+            color: var(--white);
+        }
+
+        & > input::placeholder{
+            color: var(--white);
+        }
+    }
+
+    & > .listDef{
+        margin-top: 20px;
+        height: 60%;
+        width: 100%;
+
+        & > .def{
+            height: 60px;
             width: 100%;
+            background-color: var(--purple);
+            flex-shrink: 0;
+            border-radius: 17px;
+            margin-bottom: 4px;
+            font-size: 16px;
+            // font-weight: 600;
+            box-sizing: border-box;
+            padding: 12px;
 
-            & > .def{
-                height: 60px;
-                width: 100%;
-                background-color: var(--purple);
-                flex-shrink: 0;
-                border-radius: 17px;
-                margin-bottom: 4px;
-                font-size: 16px;
-                // font-weight: 600;
-                box-sizing: border-box;
-                padding: 12px;
-
-                & > h3{
-                    color: var(--white);
-                    margin-bottom: 5px;
-                }
-
-                & > .digital{
-                    color: var(--blue);
-                }
-
-                & > .impression{
-                    color: var(--impression);
-                }
-
-                & > .pratique{
-                    color: var(--pratique);
-                }
+            & > h3{
+                color: var(--white);
+                margin-bottom: 5px;
             }
         }
     }
+
+    & > .search-bar, & >.listDef{
+        width: 90%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+// SECTION CATEGORIE
+
+.categorie{
+    &  .categorie-1,  .categorie-2, .categorie-3{
+        height: 25vh;
+
+        & > h2{
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+
+        & > img{
+            height: 70%;
+        }
+    }
+}
+
+// HEADER CATEGORIE DEF
+.categorieDef{
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    & > .bande{
+        background-color: #FF8201;
+        width: 90%;
+        height: 60%;
+        border-radius: 8px;
+        border: 2px #3C0E3C solid;
+        color: #FFFFFF;
+    }
+
+    & > img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+}
+
+.digitalBG{
+    background-color: var(--blue);
+}
+
+.impressionBG{
+    background-color: var(--impression);
+}
+
+.pratiqueBG{
+    background-color: var(--pratique);
+}
+.digital{
+    color: var(--blue);
+}
+
+.impression{
+    color: var(--impression);
+}
+
+.pratique{
+    color: var(--pratique);
 }
