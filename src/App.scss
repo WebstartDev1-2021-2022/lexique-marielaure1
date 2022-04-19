@@ -206,27 +206,42 @@ body{
         position: relative;
 
         & > h2{
-            margin-left: 10%;
+            margin-left: 15%;
         }
 
         & > img{
-            height: 70%;
-            right: 0%;
+            width: 40%;
+            height: 75%;
+            right: 12%;
             position: absolute;
         }
     }
     & > .categorie-2{
-        margin-left: 5%;
+        position: relative;
+
+        & > h2{
+            position: absolute;
+            right: 5%;
+        }
 
         & > img{
-            height: 70%;
+            width: 40%;
+            height: 68%;
+            margin-left: 8%;
         }
     }
     & > .categorie-3{
-        margin-left: 5%;
+        position: relative;
+
+        & > h2{
+            margin-left: 15%;
+        }
 
         & > img{
-            height: 70%;
+            width: 40%;
+            height: 69%;
+            right: 12%;
+            position: absolute;
         }
     }
 }
