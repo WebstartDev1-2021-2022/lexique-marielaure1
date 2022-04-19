@@ -1,7 +1,8 @@
 import { useLocation } from 'react-router-dom'
 
-export const Result = () => {
+export const Definition = () => {
     const { state } = useLocation()
+
     return(
         <>
             <button className="retour">
@@ -9,11 +10,11 @@ export const Result = () => {
             </button>
             <div className="categorieDef">
                 <div className="bande .pratiqueBG">
-                    <p>Community Manager</p>
+                    <p>Def : {state.definitionID}</p>
                 </div>
                 <img src="./images/planet-pratique.svg" alt="" />
             </div>
-            <p>{state.definition}</p>
+            <p></p>
         </>
     )
 }
