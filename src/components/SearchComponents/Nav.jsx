@@ -13,8 +13,8 @@ export const Nav = () => {
 
     const navigate = useNavigate()
 
-    const goToDefinition = (defintionID) => {
-        navigate('/definition', { state: { defintionID } })
+    const goToDefinition = (definitionID) => {
+        navigate('/definition', { state: { definitionID } })
     }
 
     function componentSection(){

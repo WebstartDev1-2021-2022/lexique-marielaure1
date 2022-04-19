@@ -3,7 +3,6 @@
     src: url("../public/font/DailyChallengeDEMO.otf") format("opentype")
 }
 
-
 :root{
     --blue: #1E60E4;
     --white: #FFFFFF;
@@ -267,6 +266,7 @@ body{
         border-radius: 8px;
         border: 2px #3C0E3C solid;
         color: #FFFFFF;
+        font-size: 20px;
     }
 
     & > img{
