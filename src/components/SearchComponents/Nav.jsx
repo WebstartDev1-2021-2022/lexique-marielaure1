@@ -32,6 +32,9 @@ export const Nav = () => {
         if(i == 1){
             setActived(true)
             document.body.style.background = "url('images/bg3.svg')"
+            document.body.style.backgroundSize = "cover"
+            document.body.style.backgroundPosition = "center"
+            document.body.style.backgroundAttachment = "scroll"
         } else{
             setActived(false)
             document.body.style.background = "#521B53"
@@ -45,16 +48,22 @@ export const Nav = () => {
             <header className='search-categorie'>
                 <img src="images/logo2.svg" alt="" />
                 <div className="choice">
-                    <div className={`${actived? "choice-btn" : "choice-btn actived"}`} onClick={() => activateSearch(0) }>
+                    {/* <div className="choice-btn search-btn" onClick={() => activateSearch(0) }>
                         <span>Recherche</span>
                     </div>
-                    <div className={`${actived? "choice-btn actived" : "choice-btn"}`} onClick={() =>  activateSearch(1) }>
+                    <div className="choice-btn categorie-btn actived" onClick={() =>  activateSearch(1) }>
+                        <span>Catégories</span>
+                    </div> */}
+                    <div className={`${actived? "choice-btn search-btn" : "choice-btn search-btn actived"}`} onClick={() => activateSearch(0) }>
+                        <span>Recherche</span>
+                    </div>
+                    <div className={`${actived? "choice-btn categorie-btn actived" : "choice-btn categorie-btn"}`} onClick={() =>  activateSearch(1) }>
                         <span>Catégories</span>
                     </div>
                 </div>
             </header>
 
-            {componentSection()}
+            { componentSection() }
             
             {/* Voir Outlet du rooter */}
         </>
