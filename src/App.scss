@@ -299,3 +299,16 @@ body{
 .pratique{
     color: var(--pratique);
 }
+
+.retour{
+    margin: 10px 0 10px 10px;
+    background-color: var(--purple);
+    height: 34px;
+    width: 34px;
+    border-radius: 15px;
+    border: none;
+
+    & > img{
+        height: 20px;
+    }
+}

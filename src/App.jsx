@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom"
 export const App = () => {
     return (
         <Routes>
-            <Route path="" element={<Nav />} />
+            <Route path="/" element={<Nav />} />
             <Route path="definition" element={<Definition />} />
             <Route path="categorie" element={<CategorieDef />} />
         </Routes>
