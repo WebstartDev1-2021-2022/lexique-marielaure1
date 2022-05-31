@@ -8,23 +8,23 @@ export const SearchInput = ({setPropositions}) => {
 
     useEffect(() => {
 
-        // const  getDefinition = async () => {
-        //     if(!word.trim()){
-        //         setPropositions([])
-        //         return
-        //     }
-        //     try {
-        //         const response = await fetch(
-        //             `https://umk1ukl6.directus.app/items/Definition?fields=name,id,category_id&filter[name][_starts_with]=${word}`)
-        //         const {data} = await response.json()
+        const  getDefinition = async () => {
+            if(!word.trim()){
+                setPropositions([])
+                return
+            }
+            try {
+                const response = await fetch(
+                    `https://umk1ukl6.directus.app/items/Definition?fields=name,id,category_id&filter[name][_starts_with]=${word}`)
+                const {data} = await response.json()
 
-        //         console.log(data)
-        //         setPropositions(data)
-        //     } catch(error){
-        //         console.error("SearchInput > getDefinition > error > ", error)
-        //     }
-        // }
-        // getDefinition()
+                console.log(data)
+                setPropositions(data)
+            } catch(error){
+                console.error("SearchInput > getDefinition > error > ", error)
+            }
+        }
+        getDefinition()
     }, [word])
     return (
         <form className="search-bar">
