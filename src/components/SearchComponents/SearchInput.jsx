@@ -15,7 +15,7 @@ export const SearchInput = ({setPropositions}) => {
             }
             try {
                 const response = await fetch(
-                    `https://umk1ukl6.directus.app/items/Definition?fields=name,id,category_id&filter[name][_starts_with]=${word}`)
+                    `https://umk1ukl6.directus.app/items/Definition?fields=name,id,category_id.name&filter[name][_starts_with]=${word}`)
                 const {data} = await response.json()
 
                 console.log(data)
@@ -26,6 +26,8 @@ export const SearchInput = ({setPropositions}) => {
         }
         getDefinition()
     }, [word])
+
+    
     return (
         <form className="search-bar">
             <button><img src="./images/icon-search.svg" alt="" /></button>

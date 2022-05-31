@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 
-export const useDirectus = () => {
+export const useDirectus = ({setPropositions}) => {
+    
     const [propositions, setPropositions] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState(null)
