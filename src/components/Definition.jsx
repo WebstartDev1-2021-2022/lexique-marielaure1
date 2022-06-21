@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useState, useEffect} from "react"
 
+// Page définition 
 export const Definition = () => {
     const { state } = useLocation()
     const [definition, setDefinition] = useState(null)
@@ -37,17 +38,14 @@ export const Definition = () => {
         navigate('/')
     }
 
-    const couleurCategorie = "";
 
-    // if(definition.category_id.name == "digital"){
-    //     couleurCategorie = "digital"
-    // }
 
 
     return(
         <>
             {definition ? (
                 <>
+                    {/* Retour page d'accueil */}
                     <button className="retour" onClick={ goToHome }>
                         <img src="./images/arrow.svg" alt="" />
                     </button>

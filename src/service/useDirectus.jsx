@@ -6,11 +6,14 @@ export const useDirectus = (setPropositions) => {
     // const [isLoading, setIsLoading] = useState(false)
     // const [error, setError] = useState(null)
 
+
+
     useEffect(()=> {
         getPropositions()
     }, [word])
 
     const getPropositions = async () => {
+    
         if(!word.trim()){
             setPropositions([])
             return
